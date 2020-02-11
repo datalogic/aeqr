@@ -1,0 +1,50 @@
+{
+    "Other": {
+        "componentName": "",
+        "downloadLocation": "",
+        "checksum": "",
+        "extras": "{}"
+    },
+    "Airwatch": {
+        "componentName": "com.airwatch.androidagent/com.airwatch.agent.DeviceAdministratorReceiver",
+        "downloadLocation": "http://discovery.awmdm.com/mobileenrollment/airwatchagent.apk",
+        "checksum": "6kyqxDOjgS30jvQuzh4uvHPk-0bmAD-1QU7vtW7i_o8=",
+        "extras": "{\"serverurl\":\"\",\"gid\":\"\",\"un\":\"\",\"pw\":\"\"}"
+    },
+    "Mobile-Work": {
+        "componentName": "com.mobileiron/.receiver.MIDeviceAdmin",
+        "downloadLocation": "https://support.mobileiron.com/android-client-nfc/mi/mi-android-nfc-latest.apk",
+        "checksum": "xFg1LVfpb97Vq958bulXHYWpd4hmVOl2RU2ThGyktc0",
+        "extras": "{\"server\":\"\",\"token\":\"\",\"quickStart\":false,\"qrCode\":true}"
+    },
+    "MobileIron-Go": {
+        "componentName": "com.mobileiron.anyware.android/com.mobileiron.polaris.manager.device.AndroidDeviceAdminReceiver",
+        "downloadLocation": "https://support.mobileiron.com/cloud-android/current/MobileIron-Go-latest.apk",
+        "checksum": "H2IxQHNSEQDujQ7aEQUzvl43Ngik_w9AGHExJhhWELE",
+        "extras": "{\"server\":\"\",\"token\":\"\",\"quickStart\":false,\"qrCode\":true}"
+    },
+    "Scan2Deploy": {
+        "componentName": "com.datalogic.scan2deploy/com.datalogic.scan2deploy.DeviceOwnerReceiver",
+        "downloadLocation": "https://github.com/datalogic/scan2deploy-android/releases/latest/download/Scan2Deploy.apk",
+        "checksum": "6CG8ls-pzlKcJNeoZtAC-neobD_ypZCI853n_TBGEHI=",
+        "extras": "{}"
+    },
+    "MobiControl": {
+        "componentName": "net.soti.mobicontrol.androidwork/net.soti.mobicontrol.admin.DeviceAdminAdapter",
+        "downloadLocation": "http://soti.net/apk/ae5",
+        "checksum": "hn8mSNJMPcovWbnnWrb-uMpWZjNlNp-jyV_2A-Whumc=",
+        "extras": "{\"enrollmentId\":\"\"}"
+    },
+    "SureMDM": {
+        "componentName": "com.nix/com.nix.NixDeviceAdmin",
+        "downloadLocation": "https://suremdm.42gears.com/nix/nixagent.apk",
+        "checksum": "CbIXJyiLvnV9PBgBs7zmKGkyIkf31dJA_DtODzQYiug=",
+        "extras": "{\"AccountId\":\"\",\"ServerPath\":\"\"}"
+    },
+    "Intune": {
+        "componentName": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver",
+        "downloadLocation": "https://play.google.com/managed/downloadManagingApp?identifier=setup",
+        "checksum": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg",
+        "extras": "{\"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN\":\"\"}"
+    }
+}
