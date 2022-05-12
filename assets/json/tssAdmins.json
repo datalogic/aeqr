@@ -1,0 +1,127 @@
+{
+    "version": 1.0,
+    "emms": {
+        "Other": {
+            "displayName": "Other",
+            "componentName": "",
+            "downloadLocation": "",
+            "checksum": "",
+            "extras": {},
+            "defaultExtras": {},
+            "hiddenExtras": {}
+        },
+        "MobiControl": {
+            "displayName": "SOTI MobiControl",
+            "componentName": "net.soti.mobicontrol.androidwork/net.soti.mobicontrol.admin.DeviceAdminAdapter",
+            "downloadLocation": "http://soti.net/apk/ae2",
+            "checksum": "hn8mSNJMPcovWbnnWrb-uMpWZjNlNp-jyV_2A-Whumc=",
+            "extras": {
+                "enrollmentId": ""
+            },
+            "defaultExtras": {},
+            "hiddenExtras": {}
+        },
+        "Airwatch": {
+            "displayName": "Airwatch Intelligent Hub",
+            "componentName": "com.airwatch.androidagent/com.airwatch.agent.DeviceAdministratorReceiver",
+            "downloadLocation": "http://discovery.awmdm.com/mobileenrollment/airwatchagent.apk",
+            "checksum": "6kyqxDOjgS30jvQuzh4uvHPk-0bmAD-1QU7vtW7i_o8=",
+            "extras": {
+                "serverurl": "",
+                "gid": "",
+                "un": "",
+                "pw": ""
+            },
+            "defaultExtras": {
+                "aospEnrollment": "False"
+            },
+            "hiddenExtras": {}
+        },
+        "Avalanche": {
+            "displayName": "Wavelink Avalanche",
+            "componentName": "com.ivanti.enterprise/com.ivanti.enterprise.receivers.DeviceOwnerReceiver",
+            "downloadLocation": "https://play.google.com/managed/downloadManagingApp?identifier=avalanche",
+            "checksum": "KmVqbcFZ3kRzVldxXPtwv6zf51SF3CTleq-6MKSZjh8=",
+            "extras": {
+                "com.ivanti.enterprise.extra.ENROLLMENT_SERVER": "",
+                "com.ivanti.enterprise.extra.ENROLLMENT_ID": "",
+                "com.ivanti.enterprise.extra.ENROLLMENT_PWD": ""
+            },
+            "defaultExtras": {},
+            "hiddenExtras": {
+                "com.ivanti.enterprise.extra.ENROLLMENT_AUTO_ENROLL": "1"
+            }
+        },
+        "MobileIron-Go": {
+            "displayName": "MobileIron Go",
+            "componentName": "com.mobileiron.anyware.android/com.mobileiron.polaris.manager.device.AndroidDeviceAdminReceiver",
+            "downloadLocation": "https://support.mobileiron.com/cloud-android/current/MobileIron-Go-latest.apk",
+            "checksum": "H2IxQHNSEQDujQ7aEQUzvl43Ngik_w9AGHExJhhWELE",
+            "extras": {
+                "server": "",
+                "token": ""
+            },
+            "defaultExtras": {
+                "quickStart": true
+            },
+            "hiddenExtras": {
+                "qrCode": true
+            }
+        },
+        "Mobile-Work": {
+            "displayName": "MobileIron Mobile@Work",
+            "componentName": "com.mobileiron/.receiver.MIDeviceAdmin",
+            "downloadLocation": "https://support.mobileiron.com/android-client-nfc/mi/mi-android-nfc-latest.apk",
+            "checksum": "xFg1LVfpb97Vq958bulXHYWpd4hmVOl2RU2ThGyktc0",
+            "extras": {
+                "server": "",
+                "token": ""
+            },
+            "defaultExtras": {
+                "quickStart": true
+            },
+            "hiddenExtras": {
+                "qrCode": true
+            }
+        },
+        "Intune": {
+            "displayName": "Microsoft Intune",
+            "componentName": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver",
+            "downloadLocation": "https://play.google.com/managed/downloadManagingApp?identifier=setup",
+            "checksum": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg",
+            "extras": {
+                "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": ""
+            },
+            "defaultExtras": {},
+            "hiddenExtras": {}
+        },
+        "SureMDM": {
+            "displayName": "SureMDM Nix Agent",
+            "componentName": "com.nix/com.nix.NixDeviceAdmin",
+            "downloadLocation": "https://suremdm.42gears.com/nix/nixagent.apk",
+            "checksum": "CbIXJyiLvnV9PBgBs7zmKGkyIkf31dJA_DtODzQYiug=",
+            "extras": {
+                "AccountId": "",
+                "ServerPath": "",
+                "GroupPath": ""
+            },
+            "defaultExtras": {
+                "HttpHeader": "https://",
+                "DeviceNameType": "UseSystemGenerated",
+                "ShowCheckListScreen": "True"
+            },
+            "hiddenExtras": {
+                "EnrollmentType": "1"
+            }
+        },
+        "Scan2Deploy": {
+            "displayName": "Datalogic Scan2Deploy",
+            "componentName": "com.datalogic.scan2deploy/com.datalogic.scan2deploy.DeviceOwnerReceiver",
+            "downloadLocation": "https://github.com/datalogic/scan2deploy-android/releases/latest/download/Scan2Deploy.apk",
+            "checksum": "6CG8ls-pzlKcJNeoZtAC-neobD_ypZCI853n_TBGEHI=",
+            "extras": {},
+            "defaultExtras": {},
+            "hiddenExtras": {}
+        }
+    }
+}
