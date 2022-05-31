@@ -1,5 +1,5 @@
 {
-    "version": 1.0,
+    "version": 2.0,
     "emms": {
         "Other": {
             "displayName": "Other",
@@ -51,6 +51,22 @@
             "hiddenExtras": {
                 "com.ivanti.enterprise.extra.ENROLLMENT_AUTO_ENROLL": "1"
             }
+        },
+		"ManageEngine": {
+            "displayName": "ManageEngine",
+            "componentName": "com.manageengine.mdm.android/com.manageengine.mdm.framework.deviceadmin.DeviceAdminMonitor",
+            "downloadLocation": "https://play.google.com/managed/downloadManagingApp?identifier=memdm",
+            "checksum": "qdbQoq_bFYSbjNMdUf5zuOGxcLqlcML48qP4ZSgpy70=",
+            "extras": {
+				"TV":"",
+				"Fqdn":"",
+				"CI":"",
+				"Port":"",
+				"Token":"",
+				"TN":""
+				},
+            "defaultExtras": {},
+            "hiddenExtras": {}
         },
         "MobileIron-Go": {
             "displayName": "MobileIron Go",
