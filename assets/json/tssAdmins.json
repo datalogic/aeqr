@@ -1,5 +1,5 @@
 {
-    "version": 2.1,
+    "version": 2.2,
     "emms": {
         "Other": {
             "displayName": "Other",
@@ -109,6 +109,26 @@
                 "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": ""
             },
             "defaultExtras": {},
+            "hiddenExtras": {}
+        },
+		  "SamsungKnoxManage": {
+            "displayName": "Samsung Knox Manage",
+            "componentName": "com.sds.emm.cloud.knox.samsung/com.sds.emm.emmagent.core.event.receiver.DeviceAdminPolicyReceiver",
+            "downloadLocation": "http://install-eu.manage.samsungknox.com/KnoxManageEMMService.apk",
+            "checksum": "MzDUGUat9VKJ1Xv8FBmP2rts6f-5K4RFLVPmxXw6gpY=",
+            "extras": {
+                "TenantId": "",
+                "TenantType": "",
+                "UserId": "",
+                "Password": "",
+                "Mode": "",
+                "Method": ""
+            },
+            "defaultExtras": {
+				"TenantType": "M",
+				 "Mode": "DO",
+				 "Method": "QR"
+			},
             "hiddenExtras": {}
         },
         "SureMDM": {
