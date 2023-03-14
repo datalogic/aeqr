@@ -1,5 +1,5 @@
 {
-    "version": 2.2,
+    "version": 2.3,
     "emms": {
         "Other": {
             "displayName": "Other",
@@ -144,7 +144,8 @@
             "defaultExtras": {
                 "HttpHeader": "https://",
                 "DeviceNameType": "UseSystemGenerated",
-                "ShowCheckListScreen": "True"
+                "ShowCheckListScreen": "True",
+				"EnrollmentMode": "0"
             },
             "hiddenExtras": {
                 "EnrollmentType": "1"
