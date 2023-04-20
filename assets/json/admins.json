@@ -1,5 +1,5 @@
 {
-    "version": 2.1,
+    "version": 2.3,
     "emms": {
         "Other": {
             "displayName": "Other",
@@ -111,6 +111,26 @@
             "defaultExtras": {},
             "hiddenExtras": {}
         },
+        "SamsungKnoxManage": {
+            "displayName": "Samsung Knox Manage",
+            "componentName": "com.sds.emm.cloud.knox.samsung/com.sds.emm.emmagent.core.event.receiver.DeviceAdminPolicyReceiver",
+            "downloadLocation": "http://install-eu.manage.samsungknox.com/KnoxManageEMMService.apk",
+            "checksum": "MzDUGUat9VKJ1Xv8FBmP2rts6f-5K4RFLVPmxXw6gpY=",
+            "extras": {
+                "TenantId": "",
+                "TenantType": "",
+                "UserId": "",
+                "Password": "",
+                "Mode": "",
+                "Method": ""
+            },
+            "defaultExtras": {
+                "TenantType": "M",
+                "Mode": "DO",
+                "Method": "QR"
+            },
+            "hiddenExtras": {}
+        },
         "SureMDM": {
             "displayName": "SureMDM Nix Agent",
             "componentName": "com.nix/com.nix.NixDeviceAdmin",
@@ -124,7 +144,8 @@
             "defaultExtras": {
                 "HttpHeader": "https://",
                 "DeviceNameType": "UseSystemGenerated",
-                "ShowCheckListScreen": "True"
+                "ShowCheckListScreen": "True",
+                "EnrollmentMode": "0"
             },
             "hiddenExtras": {
                 "EnrollmentType": "1"
