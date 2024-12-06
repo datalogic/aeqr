@@ -1,5 +1,5 @@
 {
-    "version": 2.3,
+    "version": 2.4,
     "emms": {
         "Other": {
             "displayName": "Other",
@@ -22,7 +22,7 @@
             "hiddenExtras": {}
         },
         "Airwatch": {
-            "displayName": "Airwatch Intelligent Hub",
+            "displayName": "Workspace ONE Intelligent Hub",
             "componentName": "com.airwatch.androidagent/com.airwatch.agent.DeviceAdministratorReceiver",
             "downloadLocation": "https://play.google.com/managed/downloadManagingApp?identifier=hub",
             "checksum": "6kyqxDOjgS30jvQuzh4uvHPk-0bmAD-1QU7vtW7i_o8=",
