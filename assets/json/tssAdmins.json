@@ -1,5 +1,5 @@
 {
-    "version": 2.4,
+    "version": 2.6,
     "emms": {
         "Other": {
             "displayName": "Other",
@@ -52,19 +52,39 @@
                 "com.ivanti.enterprise.extra.ENROLLMENT_AUTO_ENROLL": "1"
             }
         },
-		"ManageEngine": {
+        "Esper": {
+            "displayName": "Esper",
+            "componentName": "io.shoonya.shoonyadpc/com.shoonyaos.shoonyadpc.receivers.AdminReceiver",
+            "downloadLocation": "https://dpcdownloads.esper.cloud/esper/prod/shoonya_dpc_esper_v80061155_v8.6.1155.apk",
+            "checksum": "EOs5iFuJ8Xh2_2B8HR0KNiQU6GFpGw79m6ibRdxZLeY",
+            "extras": {
+              				"V": "",
+				              "EID": "",
+				              "E": "",
+				              "P": "",
+				              "OE" :true,
+				              "G": "",
+				              "T": "",
+				              "AT": "",
+				              "PW": "",
+				              "B": ""
+			    },
+            "defaultExtras": {},
+            "hiddenExtras": {}
+    },
+        "ManageEngine": {
             "displayName": "ManageEngine",
             "componentName": "com.manageengine.mdm.android/com.manageengine.mdm.framework.deviceadmin.DeviceAdminMonitor",
             "downloadLocation": "https://play.google.com/managed/downloadManagingApp?identifier=memdm",
             "checksum": "qdbQoq_bFYSbjNMdUf5zuOGxcLqlcML48qP4ZSgpy70=",
             "extras": {
-				"TV":"",
-				"Fqdn":"",
-				"CI":"",
-				"Port":"",
-				"Token":"",
-				"TN":""
-				},
+                "TV": "",
+                "Fqdn": "",
+                "CI": "",
+                "Port": "",
+                "Token": "",
+                "TN": ""
+            },
             "defaultExtras": {},
             "hiddenExtras": {}
         },
@@ -111,7 +131,7 @@
             "defaultExtras": {},
             "hiddenExtras": {}
         },
-		  "SamsungKnoxManage": {
+        "SamsungKnoxManage": {
             "displayName": "Samsung Knox Manage",
             "componentName": "com.sds.emm.cloud.knox.samsung/com.sds.emm.emmagent.core.event.receiver.DeviceAdminPolicyReceiver",
             "downloadLocation": "http://install-eu.manage.samsungknox.com/KnoxManageEMMService.apk",
@@ -125,10 +145,10 @@
                 "Method": ""
             },
             "defaultExtras": {
-				"TenantType": "M",
-				 "Mode": "DO",
-				 "Method": "QR"
-			},
+                "TenantType": "M",
+                "Mode": "DO",
+                "Method": "QR"
+            },
             "hiddenExtras": {}
         },
         "SureMDM": {
@@ -145,7 +165,7 @@
                 "HttpHeader": "https://",
                 "DeviceNameType": "UseSystemGenerated",
                 "ShowCheckListScreen": "True",
-				"EnrollmentMode": "0"
+                "EnrollmentMode": "0"
             },
             "hiddenExtras": {
                 "EnrollmentType": "1"
