@@ -52,6 +52,18 @@
                 "com.ivanti.enterprise.extra.ENROLLMENT_AUTO_ENROLL": "1"
             }
         },
+        "CLYD": {
+            "displayName": "Telelogos CLYD",
+            "componentName": "com.telelogos.clyddpc/com.telelogos.clyddpc.receiver.DeviceOwnerReceiver",
+            "downloadLocation": "https://play.google.com/managed/downloadManagingApp?identifier=clyd",
+            "checksum": "M6tPxXGd4NTACXPhqgtK0M1HedQpZOI8PuZ6LkSCP0k",
+            "extras": {
+                "package_url": "",
+                "deploy": true
+            },
+            "defaultExtras": {},
+            "hiddenExtras": {}
+        },
         "ManageEngine": {
             "displayName": "ManageEngine",
             "componentName": "com.manageengine.mdm.android/com.manageengine.mdm.framework.deviceadmin.DeviceAdminMonitor",
