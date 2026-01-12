@@ -125,6 +125,16 @@ public class MainActivity extends AppCompatActivity implements ReadListener {
                 String quantity = etQuantity.getText().toString().trim();
                 if (quantity.isEmpty()) {
                     quantity = "1";
+                } else {
+                    // Validate numeric input
+                    try {
+                        Integer.parseInt(quantity);
+                    } catch (NumberFormatException e) {
+                        quantity = "1";
+                        etQuantity.setText("1");
+                        Toast.makeText(MainActivity.this, "Invalid quantity, using 1", 
+                            Toast.LENGTH_SHORT).show();
+                    }
                 }
                 
                 // Add to list
@@ -163,8 +173,22 @@ public class MainActivity extends AppCompatActivity implements ReadListener {
 
         try {
             // Get the Download directory
-            File downloadDir = Environment.getExternalStoragePublicDirectory(
-                Environment.DIRECTORY_DOWNLOADS);
+            // For Android 10+ (API 29+), we use app-specific external storage which doesn't require permissions
+            // For older versions, we use the public Downloads directory
+            File downloadDir;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                // Use app-specific external storage for Android 10+
+                downloadDir = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
+            } else {
+                // Use public Downloads directory for older Android versions
+                downloadDir = Environment.getExternalStoragePublicDirectory(
+                    Environment.DIRECTORY_DOWNLOADS);
+            }
+            
+            // Ensure directory exists
+            if (downloadDir != null && !downloadDir.exists()) {
+                downloadDir.mkdirs();
+            }
             
             // Create filename with timestamp
             String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault())
@@ -173,22 +197,20 @@ public class MainActivity extends AppCompatActivity implements ReadListener {
             
             File file = new File(downloadDir, filename);
             
-            // Write data to file
-            FileWriter writer = new FileWriter(file);
-            writer.write("Barcode Scan Report\n");
-            writer.write("Generated: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", 
-                Locale.getDefault()).format(new Date()) + "\n");
-            writer.write("=====================================\n\n");
-            
-            for (ScanEntry entry : scanEntries) {
-                writer.write(entry.barcode + "\t" + entry.quantity + "\n");
+            // Write data to file using try-with-resources
+            try (FileWriter writer = new FileWriter(file)) {
+                writer.write("Barcode Scan Report\n");
+                writer.write("Generated: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", 
+                    Locale.getDefault()).format(new Date()) + "\n");
+                writer.write("=====================================\n\n");
+                
+                for (ScanEntry entry : scanEntries) {
+                    writer.write(entry.barcode + "\t" + entry.quantity + "\n");
+                }
+                
+                writer.write("\n=====================================\n");
+                writer.write("Total items: " + scanEntries.size() + "\n");
             }
-            
-            writer.write("\n=====================================\n");
-            writer.write("Total items: " + scanEntries.size() + "\n");
-            
-            writer.flush();
-            writer.close();
             
             Toast.makeText(this, "Saved to: " + file.getAbsolutePath(), 
                 Toast.LENGTH_LONG).show();
