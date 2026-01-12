@@ -1,5 +1,11 @@
 # Android App for Datalogic Terminals - Barcode Scanner
 
+## 📂 Project Location
+
+**The Android project files are in the `android-app/` directory.**
+
+> **📱 Opening in Android Studio?** See [android-app/ANDROID_STUDIO_GUIDE.md](android-app/ANDROID_STUDIO_GUIDE.md) for step-by-step instructions.
+
 ## Descrizione (Description)
 
 Questa è un'applicazione Android nativa sviluppata specificamente per terminali Datalogic con scanner integrato. L'app permette di:
@@ -19,7 +25,7 @@ This is a native Android application developed specifically for Datalogic termin
 ## Struttura del Progetto (Project Structure)
 
 ```
-android-app/
+android-app/                          ← Open this folder in Android Studio
 ├── app/
 │   ├── build.gradle                 # App-level Gradle configuration
 │   ├── proguard-rules.pro          # ProGuard rules

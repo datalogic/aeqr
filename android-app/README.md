@@ -2,6 +2,8 @@
 
 This is an Android mobile application designed for Datalogic terminals with integrated barcode scanners.
 
+> **📱 Opening in Android Studio?** See the [Android Studio Setup Guide](ANDROID_STUDIO_GUIDE.md) for detailed instructions.
+
 ## Features
 
 - **Barcode Scanning**: Uses Datalogic's integrated scan engine to read barcodes
@@ -15,9 +17,17 @@ This is an Android mobile application designed for Datalogic terminals with inte
 - Android OS version 5.0 (API 21) or higher
 - Datalogic SDK (included with Datalogic devices)
 
-## Installation
+## Quick Start
 
-1. Build the APK using Android Studio or Gradle:
+### For Android Studio Users
+
+1. **Open the project**: See [ANDROID_STUDIO_GUIDE.md](ANDROID_STUDIO_GUIDE.md)
+2. **Add Datalogic SDK**: Place the SDK JAR in `app/libs/datalogic-sdk.jar`
+3. **Build and Run**: Click the Run button in Android Studio
+
+### For Command Line Users
+
+1. Build the APK using Gradle:
    ```bash
    cd android-app
    ./gradlew assembleDebug
