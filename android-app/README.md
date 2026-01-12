@@ -68,11 +68,14 @@ This app requires the Datalogic SDK to function properly. The SDK is typically p
 
 ## Permissions
 
-The app requests the following permissions:
-- `WRITE_EXTERNAL_STORAGE`: To save files to the Download folder (Android 9 and below)
-- `READ_EXTERNAL_STORAGE`: To access the Download folder (Android 10-12)
+The app requests the following permissions based on Android version:
+- `WRITE_EXTERNAL_STORAGE`: To save files to the public Download folder (Android 5-9 only)
 
-On Android 10+, the app uses scoped storage to write to the Download directory without requiring special permissions.
+**Storage Behavior**:
+- **Android 10+ (API 29+)**: Uses app-specific external storage (`/Android/data/com.datalogic.barcodescanner/files/Download/`). No permissions required.
+- **Android 5-9 (API 21-28)**: Uses public Downloads directory (`/storage/emulated/0/Download/`). Requires `WRITE_EXTERNAL_STORAGE` permission.
+
+The app automatically handles the appropriate storage location based on the Android version.
 
 ## Technical Details
 

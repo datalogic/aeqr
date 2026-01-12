@@ -120,10 +120,13 @@ Total items: 3
 ## Permessi (Permissions)
 
 L'app richiede:
-- `WRITE_EXTERNAL_STORAGE` (Android 9 e inferiori)
-- `READ_EXTERNAL_STORAGE` (Android 10-12)
+- `WRITE_EXTERNAL_STORAGE` (solo Android 5-9)
 
-Su Android 10+, l'app usa lo scoped storage per la cartella Download.
+**Comportamento dello Storage**:
+- **Android 10+ (API 29+)**: Usa storage specifico dell'app. Nessun permesso richiesto.
+- **Android 5-9 (API 21-28)**: Usa la cartella Download pubblica. Richiede permesso.
+
+L'app gestisce automaticamente la posizione appropriata in base alla versione Android.
 
 ## Note di Sviluppo (Development Notes)
 

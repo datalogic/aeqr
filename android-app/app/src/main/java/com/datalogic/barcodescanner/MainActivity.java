@@ -223,18 +223,30 @@ public class MainActivity extends AppCompatActivity implements ReadListener {
     }
 
     private boolean checkPermissions() {
+        // For Android 10+ (API 29+), we use app-specific storage which doesn't require permissions
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            return true;
+        }
+        
+        // For Android 6-9, check WRITE_EXTERNAL_STORAGE permission
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             int writePermission = ContextCompat.checkSelfPermission(this, 
                 Manifest.permission.WRITE_EXTERNAL_STORAGE);
             return writePermission == PackageManager.PERMISSION_GRANTED;
         }
+        
+        // For Android 5 and below, no runtime permissions needed
         return true;
     }
 
     private void requestPermissions() {
-        ActivityCompat.requestPermissions(this,
-            new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-            PERMISSION_REQUEST_CODE);
+        // Only request permissions for Android 6-9
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q && 
+            Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                PERMISSION_REQUEST_CODE);
+        }
     }
 
     @Override
