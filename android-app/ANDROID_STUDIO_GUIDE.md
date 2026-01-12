@@ -180,7 +180,7 @@ If you get errors about build tools version:
 - **Target SDK**: API 34 (Android 14)
 - **Compile SDK**: API 34
 - **Gradle Version**: 8.0
-- **Android Gradle Plugin**: 8.1.1
+- **Android Gradle Plugin**: 8.0.2
 
 ## Next Steps After Setup
 
