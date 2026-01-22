@@ -1,5 +1,5 @@
 {
-    "version": 2.4,
+    "version": 2.6,
     "emms": {
         "Other": {
             "displayName": "Other",
@@ -52,14 +52,22 @@
                 "com.ivanti.enterprise.extra.ENROLLMENT_AUTO_ENROLL": "1"
             }
         },
-        "CLYD": {
-            "displayName": "Telelogos CLYD",
-            "componentName": "com.telelogos.clyddpc/com.telelogos.clyddpc.receiver.DeviceOwnerReceiver",
-            "downloadLocation": "https://play.google.com/managed/downloadManagingApp?identifier=clyd",
-            "checksum": "M6tPxXGd4NTACXPhqgtK0M1HedQpZOI8PuZ6LkSCP0k",
+        "Esper": {
+            "displayName": "Esper",
+            "componentName": "io.shoonya.shoonyadpc/com.shoonyaos.shoonyadpc.receivers.AdminReceiver",
+            "downloadLocation": "https://dpcdownloads.esper.cloud/esper/prod/shoonya_dpc_esper_v80061155_v8.6.1155.apk",
+            "checksum": "EOs5iFuJ8Xh2_2B8HR0KNiQU6GFpGw79m6ibRdxZLeY",
             "extras": {
-                "package_url": "",
-                "deploy": true
+                "V": "",
+                "EID": "",
+                "E": "",
+                "P": "",
+                "OE": true,
+                "G": "",
+                "T": "",
+                "AT": "",
+                "PW": "",
+                "B": ""
             },
             "defaultExtras": {},
             "hiddenExtras": {}
