@@ -1,0 +1,19 @@
+# Template for local.properties
+# Copy this file to local.properties and update the SDK path for your system
+#
+# This file should *NOT* be checked into Version Control Systems,
+# as it contains information specific to your local configuration.
+#
+# Location of the SDK. This is only used by Gradle.
+
+# Android SDK location - UPDATE THIS PATH FOR YOUR SYSTEM
+# Uncomment and update the line below based on your operating system:
+
+# Windows example:
+# sdk.dir=C\:\\Users\\YourUsername\\AppData\\Local\\Android\\Sdk
+
+# macOS example:
+# sdk.dir=/Users/YourUsername/Library/Android/sdk
+
+# Linux example:
+# sdk.dir=/home/YourUsername/Android/Sdk

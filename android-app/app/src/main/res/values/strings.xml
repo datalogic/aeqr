@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Barcode Scanner</string>
+    <string name="app_title">Datalogic Barcode Scanner</string>
+    <string name="instructions">Scan barcodes with the integrated scanner. Set quantity before scanning.</string>
+    <string name="quantity_label">Quantity:</string>
+    <string name="last_scan_default">Last scan: -</string>
+    <string name="scanned_items_title">Scanned Items:</string>
+    <string name="save_button">Save to File</string>
+    <string name="clear_button">Clear All</string>
+</resources>
